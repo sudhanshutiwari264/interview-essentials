@@ -63,3 +63,14 @@ const addtwo = function(num){
 
 console.log(addtwo(5));
 
+
+const person = "Sudhanshu";
+
+function girlfriend() {
+    return true;
+}
+
+// Oops! Let's keep girlfriend out of scope for Sudhanshu
+delete person.girlfriend;
+
+console.log(person + "'s relationship status: " + (girlfriend() ? "In a relationship" : "Single"));
